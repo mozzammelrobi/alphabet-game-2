@@ -1,17 +1,12 @@
-document.getElementById('home').addEventListener('click',function(e){
-    // document.getElementById('home').classList.add('hidden')
-    // document.getElementById('play-ground').classList.remove('hidden')
+function continueGame(){
+   const alphabet = getRandomAlphet();
+   
+   setInnerTextById('current-alphabet', alphabet);
+   setBackgroundColor(alphabet)
+}
 
+document.getElementById('home').addEventListener('click',function(e){
     hideElementById('home')
     showElementById('play-ground')
+    continueGame()
 })
-
-
-
-function hideElementById(elementId){
-    document.getElementById(elementId).classList.add('hidden')
-}
-
-function showElementById(elementId){
-    document.getElementById(elementId).classList.remove('hidden')
-}
