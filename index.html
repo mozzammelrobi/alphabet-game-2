@@ -11,18 +11,98 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <section class="home">
+<body class="container mx-auto">
+   <main class="min-h-screen bg-[#1E1E1E] bg-[url('./images/background.png')] bg-no-repeat bg-center">
+    <section id="home" class="">
+       <div class="text-white flex flex-col  gap-5 items-center min-h-screen justify-center  border border-red-800 ">
+        <h1 class="text-9xl text-white font-extrabold"> ALPHABET CLASH</h1>
+            <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play </p>
+            <button class="btn bg-green-500 border-none hover:to-green-100 hover:text-black">ALPHABET CLASH</button>
+       </div>
 
     </section>
 
 
+    <!-- play ground -->
+    <section id="play-ground" class=" flex justify-center items-center min-h-screen  hidden">
+        <div class="flex flex-col items-center gap-6">
+            <!-- screen -->
+            <div class="">
+                <div class="artboard artboard-horizontal phone-6 text-white border-[20px] border-black bg-[#FFFFFFB3]">
+                    <div class=" flex justify-center">
+                        <p class="font-bold text-white bg-slate-950 p-5 w-fit rounded-b-lg">don't look at the keybord when playing</p>
+                    </div>
+                    <div class="flex justify-center items-center ">
+                        <p class="text-9xl text-black font-bold border h-full uppercase">y</p>
+                    </div>
+                </div>
+            </div>
+            <!-- keybord start -->
+            <div>
+                <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">q</kbd>
+                    <kbd class="kbd">w</kbd>
+                    <kbd class="kbd">e</kbd>
+                    <kbd class="kbd">r</kbd>
+                    <kbd class="kbd">t</kbd>
+                    <kbd class="kbd">y</kbd>
+                    <kbd class="kbd">u</kbd>
+                    <kbd class="kbd">i</kbd>
+                    <kbd class="kbd">o</kbd>
+                    <kbd class="kbd">p</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">a</kbd>
+                    <kbd class="kbd">s</kbd>
+                    <kbd class="kbd">d</kbd>
+                    <kbd class="kbd">f</kbd>
+                    <kbd class="kbd">g</kbd>
+                    <kbd class="kbd">h</kbd>
+                    <kbd class="kbd">j</kbd>
+                    <kbd class="kbd">k</kbd>
+                    <kbd class="kbd">l</kbd>
+                  </div> 
+                  <div class="flex justify-center gap-1 my-1 w-full">
+                    <kbd class="kbd">z</kbd>
+                    <kbd class="kbd">x</kbd>
+                    <kbd class="kbd">c</kbd>
+                    <kbd class="kbd">v</kbd>
+                    <kbd class="kbd">b</kbd>
+                    <kbd class="kbd">n</kbd>
+                    <kbd class="kbd">m</kbd>
+                    <kbd class="kbd">/</kbd>
+                  </div>
+            </div>
+            <!-- keybord end -->
+            <!-- life and score -->
+            <div class="flex  justify-between w-full">
+                <div>
+                    <button class="btn bg-[#894189] hover:bg-[#894189B3] text-white border-none">
+                        Life 
+                        <img src="./images/heart.png" alt=""> 
+                        <span>1</span>
+                    </button>
+                    
+                </div>
+                <div>
+                    <button class="btn bg-[#360490] hover:bg-[#360490B3] text-white border-none">
+                        Life 
+                        <img src="./images/heart.png" alt=""> 
+                        <span>1</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="playground"> </section>
-
-    <section class="score"></section>
-
-
+    <section class="hidden flex justify-center items-center min-h-screen  ">
+        <div class=" bg-[#FFFFFF33] w-[400px]  h-[300px] text-white flex flex-col justify-center items-center gap-5">
+            <h1 class="text-6xl font-extrabold">Score: <span>0</span></h1>
+            <button class="btn">Play again</button>
+            <p>practice will make you pro</p>
+        </div>
+    </section>
+   </main>
     <script src="./js/script.js"></script>
 </body>
 
