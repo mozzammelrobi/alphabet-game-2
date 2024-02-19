@@ -80,25 +80,25 @@
                     <button class="btn bg-[#894189] hover:bg-[#894189B3] text-white border-none">
                         Life 
                         <img src="./images/heart.png" alt=""> 
-                        <span>1</span>
+                        <span id="current-life">5</span>
                     </button>
                     
                 </div>
                 <div>
                     <button class="btn bg-[#360490] hover:bg-[#360490B3] text-white border-none">
                         Life 
-                        <img src="./images/heart.png" alt=""> 
-                        <span>1</span>
+                        <img src="./images/dolarsvg.svg" alt=""> 
+                        <span id="current-score" class="bg-green-400 p-1 font-bold rounded-lg">0</span>
                     </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="hidden flex justify-center items-center min-h-screen  ">
+    <section id="final-score" class="hidden flex justify-center items-center min-h-screen  ">
         <div class=" bg-[#FFFFFF33] w-[400px]  h-[300px] text-white flex flex-col justify-center items-center gap-5">
-            <h1 class="text-6xl font-extrabold">Score: <span>0</span></h1>
-            <button class="btn">Play again</button>
+            <h1 class="text-6xl font-extrabold">Score: <span id="final-result">14</span></h1>
+            <button onclick="playAgain()" class="btn">Play again</button>
             <p>practice will make you pro</p>
         </div>
     </section>

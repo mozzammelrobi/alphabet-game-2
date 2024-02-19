@@ -11,6 +11,9 @@ function setBackgroundColor(id){
     document.getElementById(id).classList.add('bg-orange-400')
 }
 
+function removeBackgroundColor(id){
+    document.getElementById(id).classList.remove('bg-orange-400')
+}
 
 function setInnerTextById(id, value){
     document.getElementById(id).innerText = value;
