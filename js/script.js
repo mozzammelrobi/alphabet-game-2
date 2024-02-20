@@ -59,8 +59,8 @@ function continueGame(){
    isGameOn == true;
   
 }
-// part one /* game play*/
-document.getElementById('home').addEventListener('click',function(e){
+// part one /* game play ----------------------------------------------*/
+document.getElementById('play').addEventListener('click',function(e){
     hideElementById('home')
     showElementById('play-ground')
    
